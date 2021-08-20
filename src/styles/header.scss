@@ -45,3 +45,19 @@
     @apply w-6 h-6 float-right mr-4 md:relative md:top-1 md:text-center md:ml-2 md:mr-0;
   }
 }
+
+.nav-dropdown {
+  @apply visible static md:absolute md:top-24 bg-white p-4 m-0;
+
+  & > li {
+    @apply m-4 no-underline;
+
+    .nav-dropdown-item {
+      @apply text-gray-800 text-lg font-normal;
+    }
+  }
+}
+
+.nav-dropdown.collapsed {
+  @apply hidden;
+}

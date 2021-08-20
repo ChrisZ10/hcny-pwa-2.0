@@ -29,21 +29,56 @@ const Header = () => {
             <li
               onMouseEnter={() => {
                 if (window.innerWidth >= 768) {
-                  setCollapsed(true);
+                  setCollapsed(false);
                   setIndex(0);
                 }
               }}
               onMouseLeave={() => {
                 if (window.innerWidth >= 768) {
-                  setCollapsed(false);
+                  setCollapsed(true);
                   setIndex(-1);
                 }
               }}
             >
               <div className="nav-item">
                 <Link to="#new-friends" className="nav-link">新朋友？</Link>
-                <ChevronDownIcon className="nav-chevron-down" />
+                <ChevronDownIcon 
+                  className="nav-chevron-down"
+                  onClick={() => {
+                    if (window.innerWidth < 768) {
+                      if (index === -1) {
+                        setCollapsed(false);
+                        setIndex(0);
+                      } else {
+                        if (index !== 0) {
+                          setCollapsed(false);
+                          setIndex(0);
+                        } else {
+                          setCollapsed(true);
+                          setIndex(-1);
+                        }
+                      }
+                    }
+                  }} 
+                />
               </div>
+              <ul className={!collapsed && index === 0? "nav-dropdown" : "nav-dropdown collapsed"}>
+                <li>
+                  <Link to="#about-us" className="nav-dropdown-item">關於我們</Link>
+                </li>
+                <li>
+                  <Link to="#service-time" className="nav-dropdown-item">聚會時間</Link>
+                </li>
+                <li>
+                  <Link to="#staff" className="nav-dropdown-item">牧者和同工團隊</Link>
+                </li>
+                <li>
+                  <Link to="#prayer-request" className="nav-dropdown-item">尋求代禱</Link>
+                </li>
+                <li>
+                  <Link to="#contact-us" className="nav-dropdown-item">與我們聯絡</Link>
+                </li>
+              </ul>
             </li>
             <li
               onMouseEnter={() => {
