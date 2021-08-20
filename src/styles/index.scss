@@ -1,3 +1,13 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "./header.scss";
+
+* {
+  @apply font-noto;
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-gray-200;
+}

@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@heroicons/react": "^1.0.4",
     "gatsby": "^3.11.1",
     "gatsby-plugin-image": "^1.11.0",
     "gatsby-plugin-offline": "^4.11.0",
