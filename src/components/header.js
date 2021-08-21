@@ -26,7 +26,7 @@ const Header = () => {
         </div>
 
         <ul className={hidden? "navbar-nav" : "navbar-nav active"}>
-            <li
+            <li className="nav-item-container dropdown-menu"
               onMouseEnter={() => {
                 if (window.innerWidth >= 768) {
                   setCollapsed(false);
@@ -49,14 +49,12 @@ const Header = () => {
                       if (index === -1) {
                         setCollapsed(false);
                         setIndex(0);
+                      } else if (index !== 0) {
+                        setCollapsed(false);
+                        setIndex(0);
                       } else {
-                        if (index !== 0) {
-                          setCollapsed(false);
-                          setIndex(0);
-                        } else {
-                          setCollapsed(true);
-                          setIndex(-1);
-                        }
+                        setCollapsed(true);
+                        setIndex(-1);
                       }
                     }
                   }} 
@@ -80,45 +78,105 @@ const Header = () => {
                 </li>
               </ul>
             </li>
-            <li
+            <li className="nav-item-container dropdown-menu"
               onMouseEnter={() => {
                 if (window.innerWidth >= 768) {
-                  setCollapsed(true);
+                  setCollapsed(false);
                   setIndex(1);
                 }
               }}
               onMouseLeave={() => {
                 if (window.innerWidth >= 768) {
-                  setCollapsed(false);
+                  setCollapsed(true);
                   setIndex(-1);
                 }
               }}
             >
               <div className="nav-item">
                 <Link to="#get-involved" className="nav-link">豐收大家庭</Link>
-                <ChevronDownIcon className="nav-chevron-down" />
+                <ChevronDownIcon 
+                  className="nav-chevron-down"
+                  onClick={() => {
+                    if (window.innerWidth < 768) {
+                      if (index === -1) {
+                        setCollapsed(false);
+                        setIndex(1);
+                      } else if (index !== 1) {
+                        setCollapsed(false);
+                        setIndex(1);
+                      } else {
+                        setCollapsed(true);
+                        setIndex(-1);
+                      }
+                    }
+                  }} 
+                />
               </div>
+              <ul className={!collapsed && index === 1? "nav-dropdown" : "nav-dropdown collapsed"}>
+                <li>
+                  <Link to="#cell-group" className="nav-dropdown-item">細胞小組</Link>
+                </li>
+                <li>
+                  <Link to="#volunteers" className="nav-dropdown-item">豐收義工團隊</Link>
+                </li>
+                <li>
+                  <Link to="#news" className="nav-dropdown-item">通知看板</Link>
+                </li>
+                <li>
+                  <Link to="#events" className="nav-dropdown-item">近期活動</Link>
+                </li>
+                <li>
+                  <Link to="#prayers" className="nav-dropdown-item">代禱事項</Link>
+                </li>
+              </ul>
             </li>
-            <li
+            <li className="nav-item-container dropdown-menu"
               onMouseEnter={() => {
                 if (window.innerWidth >= 768) {
-                  setCollapsed(true);
+                  setCollapsed(false);
                   setIndex(2);
                 }
               }}
               onMouseLeave={() => {
                 if (window.innerWidth >= 768) {
-                  setCollapsed(false);
+                  setCollapsed(true);
                   setIndex(-1);
                 }
               }}
             >
               <div className="nav-item">
                 <Link to="#devotion-and-courses" className="nav-link">靈修裝備</Link>
-                <ChevronDownIcon className="nav-chevron-down" />
-              </div> 
+                <ChevronDownIcon 
+                  className="nav-chevron-down"
+                  onClick={() => {
+                    if (window.innerWidth < 768) {
+                      if (index === -1) {
+                        setCollapsed(false);
+                        setIndex(2);
+                      } else if (index !== 2) {
+                        setCollapsed(false);
+                        setIndex(2);
+                      } else {
+                        setCollapsed(true);
+                        setIndex(-1);
+                      }
+                    }
+                  }}
+                />
+              </div>
+              <ul className={!collapsed && index === 2? "nav-dropdown" : "nav-dropdown collapsed"}>
+                <li>
+                  <Link to="#daily-devotion" className="nav-dropdown-item">每日靈修</Link>
+                </li>
+                <li>
+                  <Link to="#courses" className="nav-dropdown-item">裝備課程</Link>
+                </li>
+                <li>
+                  <Link to="#audible" className="nav-dropdown-item">磐石有聲讀物</Link>
+                </li>
+              </ul> 
             </li>
-            <li>
+            <li className="nav-item-container">
               <div className="nav-item">
                 <Link to="#offering" className="nav-link">奉獻</Link>
               </div> 
