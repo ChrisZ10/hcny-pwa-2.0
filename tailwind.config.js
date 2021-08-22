@@ -17,7 +17,7 @@ module.exports = {
   },
   variants: {
     extend: {
-      borderStyle: ["last"]
+			
     }
   },
   plugins: [],
