@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@heroicons/react": "^1.0.4",
+    "@tailwindcss/aspect-ratio": "^0.2.1",
     "gatsby": "^3.11.1",
     "gatsby-background-image": "^1.5.3",
     "gatsby-plugin-image": "^1.11.0",
@@ -22,6 +23,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-youtube": "^7.13.1",
     "sass": "^1.38.0"
   },
   "devDependencies": {
