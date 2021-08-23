@@ -28,10 +28,14 @@ const Jumbotron = () => {
     <BackgroundImage
       {...bgImage}
       preserveStackingContext
-      className="h-screen bg-black bg-opacity-30"
+      className="jumbotron-bg"
     >
-      <div className="h-screen grid place-content-center">
-        <h1 className="text-4xl md:text-6xl lg:text-8xl text-white font-bold">紐約豐收靈糧堂</h1>
+      <div className="jumbotron-inner">
+        <h2 className="jumbotron-subtitle">歡迎來到</h2>
+        <h1 className="jumbotron-title">
+          <span>紐約豐收</span>
+          <span>靈糧堂</span>
+        </h1>
       </div>
     </BackgroundImage>
   );

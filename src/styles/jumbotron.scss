@@ -1,0 +1,27 @@
+.jumbotron-bg {
+  @apply 
+  h-screen 
+  bg-black bg-opacity-30;
+}
+
+.jumbotron-inner {
+  @apply h-screen grid place-content-center justify-items-center;
+}
+
+.jumbotron-title {
+  @apply 
+  text-6xl sm:text-8xl text-white font-bold 
+  flex flex-col lg:block items-center
+  tracking-wider;
+
+  & > span {
+    @apply block lg:inline-block text-shadow-lg;
+  }
+}
+
+.jumbotron-subtitle {
+  @apply 
+  text-6xl sm:text-8xl text-white font-extralight 
+  justify-center
+  tracking-wider text-shadow-lg;
+}

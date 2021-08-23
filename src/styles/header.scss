@@ -43,7 +43,7 @@
   absolute left-0 top-24 md:static 
   w-full md:w-auto 
   md:m-0 
-  px-4 pb-4 md:p-0 
+  px-4 pb-12 md:p-0 
   items-start md:items-center 
   md:justify-around 
   bg-white;
@@ -98,7 +98,7 @@
     @apply 
     py-2 pl-6 md:py-4 px-10 
     no-underline 
-    md:hover:bg-gray-100 
+    md:hover:bg-primary
     transition-colors;
 
     .nav-dropdown-item {
