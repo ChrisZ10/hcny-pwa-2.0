@@ -43,7 +43,7 @@ const Header = () => {
               <div className="nav-item">
                 <Link to="#new-friends" className="nav-link">新朋友？</Link>
                 <ChevronDownIcon 
-                  className="nav-chevron-down"
+                  className={!collapsed && index === 0? "nav-chevron-down active" : "nav-chevron-down"}
                   onClick={() => {
                     if (window.innerWidth < 768) {
                       if (index === -1) {
@@ -95,7 +95,7 @@ const Header = () => {
               <div className="nav-item">
                 <Link to="#get-involved" className="nav-link">豐收大家庭</Link>
                 <ChevronDownIcon 
-                  className="nav-chevron-down"
+                  className={!collapsed && index === 1? "nav-chevron-down active" : "nav-chevron-down"}
                   onClick={() => {
                     if (window.innerWidth < 768) {
                       if (index === -1) {
@@ -147,7 +147,7 @@ const Header = () => {
               <div className="nav-item">
                 <Link to="#devotion-and-courses" className="nav-link">靈修裝備</Link>
                 <ChevronDownIcon 
-                  className="nav-chevron-down"
+                  className={!collapsed && index === 2? "nav-chevron-down active" : "nav-chevron-down"}
                   onClick={() => {
                     if (window.innerWidth < 768) {
                       if (index === -1) {

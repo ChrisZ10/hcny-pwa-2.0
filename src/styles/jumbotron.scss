@@ -15,15 +15,20 @@
   tracking-wider;
 
   & > span {
-    @apply block lg:inline-block text-shadow-lg;
+    @apply 
+		block lg:inline-block 
+		text-shadow-lg
+		leading-tight sm:leading-none;
   }
 }
 
 .jumbotron-subtitle {
   @apply 
+	mt-10
   text-6xl sm:text-8xl text-white font-extralight 
   justify-center
-  tracking-wider text-shadow-lg;
+  tracking-wider text-shadow-lg 
+	leading-tight sm:leading-none;
 }
 
 .jumbotron-btn-container {
@@ -33,7 +38,7 @@
 .jumbotron-btn {
   @apply 
   bg-transparent hover:bg-white
-  m-10 px-5 py-3 
+  m-7 px-5 py-3 
   border-4 border-white 
   text-xl sm:text-2xl font-normal
   text-white hover:text-gray-800; 
