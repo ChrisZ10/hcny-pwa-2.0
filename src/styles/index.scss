@@ -3,6 +3,9 @@
 @import "tailwindcss/utilities";
 @import "./header.scss";
 @import "./jumbotron.scss";
+@import "./card.scss";
+@import "./button.scss";
+@import "./typography.scss";
 
 * {
   @apply font-noto;

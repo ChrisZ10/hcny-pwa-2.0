@@ -1,0 +1,31 @@
+.h1 {
+  @apply 
+  mb-6 lg:mb-4 xl:mb-6
+  text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 
+  font-semibold tracking-wider;
+}
+.h1.dark {
+  @apply text-gray-800;
+}
+.h1.light {
+  @apply text-white;
+}
+.h1.primary {
+  @apply text-primary;
+}
+
+.p {
+  @apply 
+  mb-6 lg:mb-4 xl:mb-6
+  md:text-lg lg:text-base xl:text-lg font-light 
+  tracking-wide;
+}
+.p.dark {
+  @apply text-gray-800;
+}
+.p.light {
+  @apply text-white;
+}
+.p.primary {
+  @apply text-primary;
+}

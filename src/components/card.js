@@ -6,7 +6,7 @@ const Card = ({ mediaType, mediaData, children }) => {
 
   return (
     <div className="card-container">
-      <div className="card-right">
+      <div className="card-left">
         {mediaType === "image" && mediaData &&
           <GatsbyImage
             className="card-image"
@@ -28,7 +28,7 @@ const Card = ({ mediaType, mediaData, children }) => {
           </div>
         }
       </div>
-      <div className="card-left">
+      <div className="card-right">
         { children }
       </div>
     </div>
