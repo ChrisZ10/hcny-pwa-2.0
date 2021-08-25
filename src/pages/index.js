@@ -22,6 +22,9 @@ const Home = () => {
         <p className="p dark">歡迎您觀看本週的主日視頻。<br></br>更多精彩視頻，請點擊下面的按鍵進入我們的YouTube Channel查看</p>
         <a href="#youtube-channel" className="btn btn-primary">更多精彩視頻</a>
       </Card>
+      <div className=" bg-gray-300">
+        <h1 className="h1 dark text-center">聚會時間</h1>
+      </div>
     </Layout>
   );
 };

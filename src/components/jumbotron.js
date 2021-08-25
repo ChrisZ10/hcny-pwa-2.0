@@ -43,7 +43,7 @@ const Jumbotron = () => {
       className="jumbotron-bg"
     >
       <div className="jumbotron-inner">
-        <h2 className="jumbotron-subtitle">歡迎來到</h2>
+        {/* <h2 className="jumbotron-subtitle">建造榮耀的教會</h2> */}
         <h1 className="jumbotron-title">
           <span>紐約豐收</span>
           <span>靈糧堂</span>
