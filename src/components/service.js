@@ -14,7 +14,7 @@ const Service = ({ google }) => {
   return (
     <div className="box bg-primary-dark">
       
-      <h1 className="h1 light mb-6 lg:mb-4 xl:mb-8">聚會信息</h1>
+      <h1 className="h1 light mb-6 lg:mb-8">聚會信息</h1>
       
       <div className="grid lg:grid-cols-2 gap-y-8 lg:gap-y-0 lg:gap-x-16 xl:gap-x-24">
         
@@ -42,7 +42,7 @@ const Service = ({ google }) => {
               />
             </Map>
           </div>
-          <p className="h3 light mt-8 px-4">
+          <p className="h3 light mt-8">
             中文堂：週日10:30AM<br></br>
             英文堂：週日10:30AM<br></br>
             54-47 Little Neck Pkwy, <span className="block sm:inline">Little Neck, NY 11362</span>
@@ -57,7 +57,7 @@ const Service = ({ google }) => {
               placeholder="blurred"
             />
           </div>  
-          <p className="h3 light mt-8 px-4">
+          <p className="h3 light mt-8">
             線上主日崇拜：YouTube直播<br></br>
             兒童主日崇拜：<span className="block sm:inline">Zoom ID: 564 403 7557</span>
           </p>
