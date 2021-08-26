@@ -38,6 +38,15 @@
 .p.primary {
   @apply text-primary;
 }
+.p.relaxed {
+  letter-spacing: 0.2rem;
+}
+.p.loose {
+  letter-spacing: 0.4rem;
+}
+.p.sm {
+  @apply text-sm;
+}
 
 .h3 {
   @apply 
@@ -54,4 +63,7 @@
 }
 .h3.primary {
   @apply text-primary;
+}
+.h3.loose {
+  letter-spacing: 0.3rem;
 }
