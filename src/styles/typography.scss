@@ -45,7 +45,7 @@
   letter-spacing: 0.4rem;
 }
 .p.sm {
-  @apply text-sm;
+  @apply text-sm leading-relaxed;
 }
 
 .h3 {
