@@ -11,15 +11,16 @@ const Header = () => {
   const [index, setIndex] = useState(-1); // show dropdown menu of nav item at index. Work with collapsed
 
   return (
-    <nav className="absolute inset-0 z-10 w-full h-24 bg-white">
+    <nav className="navbar">
       <div className="navbar-container">
         <div className="h-16 w-16">
           <StaticImage 
-            src = "../assets/logo.png"
-            alt = "Church Logo"
-            placeholder = "none"
-            layout = "constrained"
-            onClick = {() => {
+            src="../assets/logo.png"
+            alt="Church Logo"
+            placeholder="none"
+            layout="constrained"
+            style={{cursor: "pointer"}}
+            onClick={() => {
               navigate("/");
             }}
           />
@@ -65,7 +66,7 @@ const Header = () => {
                   <Link to="#about-us" className="nav-dropdown-item">關於我們</Link>
                 </li>
                 <li>
-                  <Link to="#service-time" className="nav-dropdown-item">聚會時間</Link>
+                  <Link to="/service-time" className="nav-dropdown-item">聚會時間</Link>
                 </li>
                 <li>
                   <Link to="#staff" className="nav-dropdown-item">牧者和同工團隊</Link>

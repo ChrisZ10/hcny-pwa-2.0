@@ -1,6 +1,10 @@
 .card-container {
   @apply 
-  px-5 py-10 sm:px-10 sm:py-20 md:p-24 lg:p-16 xl:p-24
+  px-5 py-10 
+  sm:px-10 sm:py-20 
+  md:p-24 
+  lg:p-16 
+  xl:py-24
   grid lg:grid-cols-2;
 }
 

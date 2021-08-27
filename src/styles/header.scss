@@ -1,3 +1,8 @@
+.navbar {
+  @apply
+  absolute inset-0 z-10 w-full h-24 bg-white;
+}
+
 .navbar-container {
   @apply 
   flex 
