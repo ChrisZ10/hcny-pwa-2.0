@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="h-16 w-16">
+        <div className="navbar-brand">
           <StaticImage 
             src="../assets/logo.png"
             alt="Church Logo"
@@ -177,7 +177,7 @@ const Header = () => {
                 </li>
               </ul> 
             </li>
-            <li className="nav-item-container">
+            <li className="nav-item-container last-nav-item">
               <div className="nav-item">
                 <Link to="#offering" className="nav-link">奉獻</Link>
               </div> 

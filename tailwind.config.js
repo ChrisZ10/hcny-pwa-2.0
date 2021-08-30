@@ -13,6 +13,11 @@ module.exports = {
           dark: "#ab7408",
           darkest: "#493203"
         }
+      },
+      spacing: {
+        "8vh": "8vh",
+        "10vh": "10vh",
+        "12vh": "12vh"
       }
     },
   },

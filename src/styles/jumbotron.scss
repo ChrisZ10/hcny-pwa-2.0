@@ -1,70 +1,54 @@
 .jumbotron-bg {
   @apply 
-  h-screen 
   bg-black bg-opacity-30;
+  height: 88vh;
 }
 
 .jumbotron-inner {
-  @apply h-screen grid place-content-center justify-items-center;
+  @apply grid content-center justify-center justify-items-start;
+  height: 88vh;
 }
 
 .jumbotron-title {
   @apply 
-  mt-10
-  text-6xl sm:text-8xl text-white font-medium
-  flex flex-col lg:block items-center
-  tracking-widest;
+  text-6xl sm:text-7xl lg:text-8xl xl:text-9xl 
+  text-white font-bold
+  flex flex-col sm:block items-start
+  sm:tracking-widest mb-4;
+  animation: 1s dissolve;
 
   & > span {
-    @apply 
-		block lg:inline-block 
-		text-shadow-lg
-		leading-tight sm:leading-none;
+    @apply block sm:inline-block 
+		text-shadow-lg my-1;
   }
 }
 
 .jumbotron-subtitle {
   @apply 
-  mt-10 mb-7
-  text-5xl sm:text-7xl text-white font-extralight 
-  justify-center
-  tracking-wider text-shadow-lg 
-  leading-tight sm:leading-none;
+  text-2xl sm:text-3xl lg:text-4xl xl:text-5xl
+  font-extralight text-white sm:tracking-widest
+  mb-4 text-shadow-lg;
 }
 
 .jumbotron-btn-container {
-  @apply w-full grid place-items-center;
+  @apply w-full grid place-items-start;
 }
 
 .jumbotron-btn {
   @apply 
-  bg-transparent hover:bg-white
-  m-7 px-5 py-3 
-  border-2 border-white 
-  text-xl sm:text-2xl font-light
-  text-white hover:text-gray-800; 
+  bg-primary hover:bg-primary-light
+  mt-4 px-5 py-3
+  text-base sm:text-lg lg:text-xl xl:text-2xl font-light
+  text-gray-800;  
 }
 
-.jumbotron-chevron-container {
-  @extend .jumbotron-btn-container;
-  @apply absolute bottom-8;
-}
-
-.jumbotron-chevron-down {
-  @apply w-14 h-14 text-white invisible;
-}
-.jumbotron-chevron-down.active {
-  @apply visible;
-  animation: scrolldown 2s infinite;
-}
-@keyframes scrolldown {
+@keyframes dissolve {
   0% {
-    transform: translateY(0);
+    transform: translateY(-50%);
+    opacity: 0;
   }
-  20% {
-    transform: translateY(10px);
-  }
-  40% {
+  50% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
