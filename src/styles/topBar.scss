@@ -1,0 +1,23 @@
+.top-bar-container {
+  @apply grid lg:grid-cols-3 bg-primary mx-4 my-16 lg:w-80vw lg:mx-auto;
+}
+
+.top-bar-item-container {
+  @apply px-8 py-4;
+}
+
+.top-bar-item-container.underlined {
+  @apply border-b border-white lg:border-b-0 lg:border-r;
+}
+
+.top-bar-item-title {
+  @apply text-lg font-light;
+}
+
+.top-bar-item-subtitle {
+  @apply text-sm font-light;
+}
+
+.top-bar-item-inline-icon {
+  @apply inline ml-2 mr-1 relative bottom-0.5;
+}
