@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 import { convertToBgImage } from "gbimage-bridge";
 import BackgroundImage from "gatsby-background-image";
+import { SiYoutubetv } from "react-icons/si";
 
 const Jumbotron = () => {
 
@@ -37,7 +38,9 @@ const Jumbotron = () => {
           <span>靈糧堂</span>
         </h1>
         <div className="jumbotron-btn-container">
-          <a href="#sunday-stream" className="jumbotron-btn">觀看主日直播</a>
+          <a href="#sunday-stream" className="jumbotron-btn">
+            <span><SiYoutubetv className="inline relative bottom-0.5 mr-2 w-6 h-6"/></span>觀看主日直播
+          </a>
         </div>
       </div>
     </BackgroundImage>
