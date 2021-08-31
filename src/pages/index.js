@@ -3,7 +3,7 @@ import React from "react";
 import Layout from "../components/layout";
 import Head from "../components/head";
 import Jumbotron from "../components/jumbotron";
-import { SiYoutube } from "react-icons/si";
+import TopBar from "../components/topBar";
 // import { useConfig } from "../hooks/useMongoDb";
 
 const Home = () => {
@@ -14,43 +14,7 @@ const Home = () => {
     <Layout>
       <Head subtitle="首頁"/>
       <Jumbotron />
-      <div className="grid lg:grid-cols-3 bg-primary mx-4 my-16">
-        <div className="px-8 py-4 border-b border-white">
-          <h3 className="text-lg font-light">中文主日崇拜</h3>
-          <p className="text-sm font-light">
-            <span>SUN 10:30AM</span>
-            <span className="block">
-              實體聚會 + 
-              <a href="#chinese">
-                <SiYoutube className="inline ml-2 mr-1 relative bottom-0.5"/>YouTube直播
-              </a>
-            </span>
-          </p>
-        </div>
-        <div className="px-8 py-4 border-b border-white">
-          <h3 className="text-lg font-light">英文主日崇拜</h3>
-          <p className="text-sm font-light">
-            <span>SUN 10:30AM</span>
-            <span className="block">
-              實體聚會 + 
-              <a href="#english">
-                <SiYoutube className="inline ml-2 mr-1 relative bottom-0.5"/>YouTube直播
-              </a>
-            </span>
-          </p>
-        </div>
-        <div className="px-8 py-4">
-          <h3 className="text-lg font-light">兒童主日崇拜</h3>
-          <p className="text-sm font-light">
-            <span>SUN 10:30AM</span>
-            <span className="block">
-              <a href="#zoom">
-                Zoom線上聚會
-              </a>
-            </span>
-          </p>
-        </div>
-      </div>
+      <TopBar />
       {/* <Card 
         mediaType="video"
         mediaData={sermonYoutubeId}
