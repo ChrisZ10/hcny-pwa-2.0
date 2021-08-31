@@ -1,17 +1,14 @@
 .jumbotron-bg {
-  @apply 
-  bg-black bg-opacity-30;
-  height: 88vh;
+  @apply bg-black bg-opacity-30 h-88vh lg:h-70vh;
 }
 
 .jumbotron-inner {
-  @apply grid content-center justify-center justify-items-start;
-  height: 88vh;
+  @apply grid content-center lg:content-start justify-center justify-items-start lg:pt-16 h-88vh lg:h-70vh;
 }
 
 .jumbotron-title {
   @apply 
-  text-6xl sm:text-7xl lg:text-8xl xl:text-9xl 
+  text-6xl sm:text-7xl 
   text-white font-bold
   flex flex-col sm:block items-start
   sm:tracking-widest mb-4;
@@ -25,7 +22,7 @@
 
 .jumbotron-subtitle {
   @apply 
-  text-2xl sm:text-3xl lg:text-4xl xl:text-5xl
+  text-2xl sm:text-3xl
   font-extralight text-white sm:tracking-widest
   mb-2 text-shadow-lg;
 }
@@ -38,7 +35,7 @@
   @apply 
   bg-transparent hover:bg-white
   mt-4 px-3 py-2 lg:px-5 lg:py-3
-  text-base sm:text-lg lg:text-xl xl:text-2xl font-light
+  text-base sm:text-lg font-light
   text-white hover:text-gray-800
   border-white border-2;  
 }
