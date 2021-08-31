@@ -27,7 +27,7 @@
   @apply 
   text-2xl sm:text-3xl lg:text-4xl xl:text-5xl
   font-extralight text-white sm:tracking-widest
-  mb-4 text-shadow-lg;
+  mb-2 text-shadow-lg;
 }
 
 .jumbotron-btn-container {
@@ -36,10 +36,11 @@
 
 .jumbotron-btn {
   @apply 
-  bg-primary hover:bg-primary-light
-  mt-8 px-5 py-3
+  bg-transparent hover:bg-white
+  mt-4 px-3 py-2 lg:px-5 lg:py-3
   text-base sm:text-lg lg:text-xl xl:text-2xl font-light
-  text-gray-800;  
+  text-white hover:text-gray-800
+  border-white border-2;  
 }
 
 @keyframes dissolve {
