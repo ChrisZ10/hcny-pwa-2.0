@@ -1,13 +1,16 @@
 .top-bar {
-  @apply mx-4 my-16 relative flex justify-center;
+  @apply mx-4 my-16 lg:my-8 relative flex justify-center;
 }
 
 .top-bar-container {
-  @apply lg:m-auto grid lg:grid-cols-3 bg-primary lg:absolute lg:-top-32 lg:w-10/12 w-full;
+  @apply lg:m-auto grid lg:grid-cols-3 bg-primary lg:w-8/12 w-full;
 }
 
 .top-bar-item-container {
   @apply px-8 py-4 lg:py-8;
+  &:hover {
+    @apply bg-primary-light;
+  }
 }
 
 .top-bar-item-container.underlined {
@@ -15,11 +18,11 @@
 }
 
 .top-bar-item-title {
-  @apply text-lg lg:text-xl font-light;
+  @apply text-lg lg:text-xl font-light lg:text-center text-gray-800;
 }
 
 .top-bar-item-subtitle {
-  @apply text-sm lg:text-base font-light;
+  @apply text-sm lg:text-base font-light lg:text-center text-gray-800;
 }
 
 .top-bar-item-inline-icon {
